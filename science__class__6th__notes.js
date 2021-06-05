@@ -11,6 +11,9 @@ let divElement9 = document.createElement('div');
 let divElement10 = document.createElement('div');
 let divElement11 = document.createElement('div');
 
+function welcome() {
+  document.getElementById("welcome").style.transform = 'scale(0)';
+}
 //dark mode script 
 function darkMode(){
 document.getElementById("darkModeContainer").style.display = "flex";
@@ -96,7 +99,7 @@ function off(){
   let footer = document.getElementById("footer");
   fullbody.style.backgroundColor = "white";
   fullbody.style.color = ""
-    NavTop.style.backgroundColor = "white";
+    NavTop.style.backgroundColor = "";
   NavBottom.style.backgroundColor = "white";
   DarkModeCon.style.backgroundColor = "white";
     footer.style.backgroundColor = "white";
