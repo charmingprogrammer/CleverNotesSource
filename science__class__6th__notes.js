@@ -34,7 +34,7 @@ document.getElementById("off").style.backgroundColor = "";
   
 }
 function randomMode() {
-var random = Math.floor((Math.random() * 10) + 1);
+var random = Math.floor((Math.random() * 16) + 1);
 
 if (random === 1) {
   chapter1();
@@ -65,6 +65,24 @@ if (random === 9) {
 }
 if (random === 10) {
   chapter10();
+}
+if (random === 11) {
+  chapter11();
+}
+if (random === 12) {
+  chapter12();
+}
+if (random === 13) {
+  chapter13();
+}
+if (random === 14) {
+  chapter14();
+}
+if (random === 15) {
+  chapter15();
+}
+if (random === 16) {
+  chapter16();
 }
 
 }
