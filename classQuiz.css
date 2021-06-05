@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Comic Sans MS;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-snap-type: x mandatory;
+}
+.container{
+  height: 100%;
+  width: 100%;
+ margin-top: 50px;
+  background:none;
+  display: flex;
+  align-items: center;
+  overflow-x:scroll;
+  scroll-snap-type: x mandatory;
+}
+#topStyle{
+     position: fixed;
+     top: 0;
+}
+#HomeBanner{
+     height:100vh;
+     width: 100%;
+     background: white;
+     position: fixed;
+     top: 0;
+     z-index:193994994;
+     display: grid;
+     place-items: center;
+}
+#HomeBanner span {
+font-size:25px;
+padding: 10px 20px;
+z-index: 12355;
+}
+#HomeBanner img{
+     height: 100%;
+     width: 100%;
+}
+
+#HomeBanner span button {
+padding: 10px 20px;
+background:#92E3A9;
+outline: none;
+border: none;
+border-radius: 5px;
+}
+
+.QContainer{
+  height: 100%;
+  min-width: 90%;
+  background: none;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 100px;
+  border-radius: 25px;
+  box-shadow: 0 0  10px 1px black;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  scroll-snap-align: center;
+}
+.QContainer h1{
+  height: 50px;
+  width: 50px;
+ margin-top: -25px;
+  border-radius: 100px;
+  background: #38a7f3;
+  display:grid;
+  place-items: center;
+  color: white;
+  box-shadow: 0 0 2px 1px  #000000;
+  
+}
+.QContainer h2{
+  padding: 10px 20px;
+  font-weight: 400;
+  width: 95%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  
+}
+.option{
+ margin-top: 10px;
+ margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 90%;
+  font-variant: ;
+}
+/*dark mode style code */
+#darkMode{
+  height: 30px;
+  width: 45px;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 10px;
+  right:10px;
+  background:black;
+  z-index: 1234;
+}
+#toggler {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background: #38a7f3;
+  transform: scale(0.9);
+}
+.darkMode{
+  background:#292929;
+  color: white;
+}
+.float {
+  float: right;
+}
+
+.error{
+  height: 100vh;
+  width: 100%;
+  background: #5276f1;
+  position: fixed;
+  top: 0;
+  display: none;
+  place-items: center;
+  
+}
+#alertPanel{
+     height: 200px;
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+     background: none;
+     display: grid;
+     place-items: center;
+     font-size:45px ;
+     font-weight: bold;
+     font-variant: small-caps;
+     animation: updown .5s infinite linear;
+}
+#bottomStyle{
+     position: fixed;
+     bottom: 0;
+}
+@keyframes updown {
+     0%{transform:scale(0.8)}
+     50%{transform:scale(1)}
+     100%{transform:scale(0.8)}
+}
+
+@media only screen and (orientation: landscape) {
+  .error{
+   display: grid;
+  }
+}
