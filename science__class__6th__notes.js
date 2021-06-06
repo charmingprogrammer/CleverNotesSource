@@ -11,6 +11,21 @@ let divElement9 = document.createElement('div');
 let divElement10 = document.createElement('div');
 let divElement11 = document.createElement('div');
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+document.getElementById("chapter1").style.top = "0";
+
+    document.getElementById("bottom__Nav").style.bottom = "0";
+  } else {
+    document.getElementById("chapter1").style.top = "-50px";
+    
+    document.getElementById("bottom__Nav").style.bottom = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 function welcome() {
   document.getElementById("welcome").style.transform = 'scale(0)';
 }
