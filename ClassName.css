@@ -11,7 +11,7 @@
           position: fixed;
          top: 0;
          background:#2d2d2d;
-        z-index: 1344;
+        z-index: 134495995;
         transition:.5s;
         transform-origin: bottom right;
        } 
@@ -122,6 +122,7 @@ font-size: 20px;
 border-bottom: 1px solid gray;
  text-transform:capitalize;
  color: teal;
+ transition:.1s;
 }
 .title p{
  padding: 10px 20px;
@@ -145,12 +146,6 @@ border-bottom: 1px solid gray;
  border-radius: 4px;
  border: 1px solid teal;
   
-}
-.box:hover{
-background: #ffff9d;
-color: black;
-user-select: none;
-
 }
 
 .box p{
@@ -280,6 +275,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     user-select: none;
+     transition:.1s;
   }
 #darkModeContainer{
   height: 100px; 
@@ -304,3 +300,49 @@ background: white;
   transform: scale(0.8);
   font-size: 20px;
 }
+
+
+@media only screen and (min-width: 900px)  {
+  #containerForRes{
+  width:70%;
+  float: right;
+}
+.SideNavigation{
+  width: 30%;
+  top: 0px;
+  left:0;
+  box-shadow:none;
+}
+ .bottom__Nav{
+    height:300px;
+    width: 50px;
+    bottom: 100px;
+    right: 20px;
+    flex-direction: column;
+     border-radius: 10px;
+     box-shadow: 0 0 10px 1px #00000073;
+  }
+#darkModeContainer{
+  height: 300px; 
+  width:50px;
+bottom:100px;
+right: 20px;
+display: none;
+flex-direction: column;
+z-index: 2835;
+   border-radius: 10px;
+     box-shadow: 0 0 10px 1px #00000073;
+
+}
+#darkModeContainer button {
+  height:50%;
+  border: none;
+  background: #00808071;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  transform: scale(0.5);
+}
+  .title  {
+    border-bottom: none;
+}}
