@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 #sidebar{
   background: teal;
 }
