@@ -1,0 +1,86 @@
+#sidebar{
+  background: teal;
+}
+#sidebar a{
+  color: white;
+}
+.dark{
+  background: black;
+  color: #efefef;
+}
+.toggler{
+  float: right;
+}
+h1,h2,h3,h4,h5,h6{
+  padding: 10px 20px;
+  background: none;
+}
+span {
+  padding: 10px 20px;
+  font-size: 10px;
+  color: #26bdbd;
+  background: none;
+}
+ #mainContainer img{
+  height: 300px;
+  width: 100%;
+  transform: scale(0.9);
+  border-radius: 10px;
+  object-fit: fill;
+  transition: .2s ease-in;
+}
+#mainContainer img:hover {
+  filter:brightness(70%);
+
+}
+li {
+  padding: 10px 20px;
+  list-style-type: none;
+  
+}
+a {
+  color: teal;
+  text-decoration: none;
+}
+#darkCon {
+  height: 30px;
+  width: 50px;
+  background:none;
+  border-radius: 100px;
+  transform: scale(0.9);
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 10px 1px #00000089 inset;
+}
+#toggler{
+  height: 30px;
+  width: 30px;
+  background:none;
+  border-radius: 100px;
+  transform: scale(0.9);
+  background: teal;
+  box-shadow: 0 0 10px 1px #00000021;
+  transition: .5s ease-in;
+}
+@media only screen and (min-width:700px) {
+#fullBody{
+  display: flex;
+  flex-direction: row-reverse;
+}
+#mainContainer{
+  width: 60%;
+ float: right;
+}
+#otherContainer {
+  width: 40%;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+}
+.EpisodesCon{
+   height: 600px;
+}
+button{
+width: 100%;
+}
+}
