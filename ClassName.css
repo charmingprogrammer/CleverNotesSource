@@ -10,7 +10,7 @@
           width: 100%;
           position: fixed;
          top: 0;
-         background:#2d2d2d;
+         background:#101010;
         z-index: 134495995;
         transition:.5s;
         transform-origin: bottom right;
@@ -20,7 +20,7 @@
          width: 100%;
        }
        .welcomeContainer h1 {
-         color: orange;
+         color: teal;
          padding: 10px 20px;
          margin-top: 100px;
        }
@@ -38,7 +38,7 @@
       
       .welcomeContainer button {
         padding: 10px 20px;
-        background: orange;
+        background: teal;
         border: none;
         margin-left: 20px;
         margin-top: 10px;
