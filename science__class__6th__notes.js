@@ -40,7 +40,7 @@ function on(){
   let DarkModeCon = document.getElementById("darkModeContainer");
   let fullbody  = document.getElementById("body"); 
   let footer = document.getElementById("footer");
-  fullbody.style.backgroundColor = "#262626";
+  fullbody.style.backgroundColor = "#101010";
   fullbody.style.color = "#d8d8d8"
     NavTop.style.backgroundColor = "#262626";
   NavBottom.style.backgroundColor = "#262626";
