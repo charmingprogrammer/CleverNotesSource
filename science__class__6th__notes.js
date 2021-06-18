@@ -41,11 +41,11 @@ function on(){
   let fullbody  = document.getElementById("body"); 
   let footer = document.getElementById("footer");
   fullbody.style.backgroundColor = "#101010";
-  fullbody.style.color = "#d8d8d8"
-    NavTop.style.backgroundColor = "#262626";
-  NavBottom.style.backgroundColor = "#262626";
-  DarkModeCon.style.backgroundColor = "#262626";
-    footer.style.backgroundColor = "#262626";
+  fullbody.style.color = "#d8d8d8";
+    NavTop.style.backgroundColor = "#101010";
+  NavBottom.style.backgroundColor = "#101010";
+  DarkModeCon.style.backgroundColor = "#101010";
+    footer.style.backgroundColor = "#101010";
   darkModeContainer.style.display = "none";
   document.getElementById("on").style.backgroundColor = "teal";
 document.getElementById("off").style.backgroundColor = "";
