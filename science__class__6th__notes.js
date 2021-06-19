@@ -212,7 +212,7 @@ divElement10.className = "box";
 divElement11.className = "box";
  divElement11.id = "box11";
  divElement11.style.backgroundColor = 'teal';
-   divElement11.innerHTML = '<h2> <a style="color:white;" href="Quiz]science-chapter1-class6th.html">🎯 Play Quiz Game</a> </h2>';
+   divElement11.innerHTML = '<h2> <a style="color:white;" href="[Quiz]science-chapter1-class6th.html">🎯 Play Quiz Game</a> </h2>';
   ContentContainer.appendChild(divElement11);
 //chapter 1
 function chapter1() {
@@ -288,7 +288,7 @@ divElement10.className = "box";
 divElement11.className = "box";
  divElement11.id = "box11";
  divElement11.style.backgroundColor = 'teal';
-   divElement11.innerHTML = '<h2> <a style="color:white;" href="Quiz]science-chapter1-class6th.html">🎯 Play Quiz Game</a> </h2>';
+   divElement11.innerHTML = '<h2> <a style="color:white;" href="[Quiz]science-chapter1-class6th.html">🎯 Play Quiz Game</a> </h2>';
   ContentContainer.appendChild(divElement11);
 
 }
