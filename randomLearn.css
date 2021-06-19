@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Trebuchet MS;
+background: #313131;
+  
+}
+#logo{
+  height:100px ;
+  width: 100px;
+border-bottom-left-radius:100px ;
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;
+box-shadow: 0 0 100px 1px #7d91e0 inset;
+position:fixed;
+bottom:0 ;
+  right: 0;
+  z-index: 123;
+}
+#logo img{
+height:100px ;
+  width: 100px;
+  border-radius: 100%;
+  transform:scale(0.8);
+  box-shadow: 0 0 15px 1px black;
+  transition:.5s;
+}
+
+.container__main{
+  height:100%;
+  width: 100%;
+}
+.container__topic{
+  height: 100vh;
+  width: 100%;
+  background: #313131;
+}
+
+#learning{
+  height: 100vh;
+  width: 100%;
+  background:#1818189d;
+  transform: scale(0.9);
+  border-radius: 10px;
+  color: #eaeaea;
+}
+#learning h2 {
+  padding:10px 20px ;
+  background: none;
+}
+
+
+#learning p {
+  padding:10px 20px ;
+  font-size: 20px;
+  background: none;
+}
+iframe {
+border-radius: 10px;
+transform: scale(0.9);
+}
+
