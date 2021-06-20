@@ -24,6 +24,7 @@ nav{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: .2s ease-in;
 }
 nav i{
   background: none;
