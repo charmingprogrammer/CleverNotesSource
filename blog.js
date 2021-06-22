@@ -6,8 +6,14 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
 document.getElementById("nav").style.top = "0";
 
+document.getElementById("bottomNav").style.bottom = "0";
+
+
   } else {
     document.getElementById("nav").style.top = "-50px";
+    
+document.getElementById("bottomNav").style.bottom = "-50px";
+
   }
   prevScrollpos = currentScrollPos;
 }
