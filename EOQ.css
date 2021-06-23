@@ -40,5 +40,6 @@ html{
   .EOQContainer{
   width: 60%;
   float: right;
+  background: red;
 }
 }
