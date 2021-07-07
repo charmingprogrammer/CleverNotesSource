@@ -29,6 +29,11 @@ document.getElementById("chapter1").style.top = "0";
 function welcome() {
   document.getElementById("welcome").style.transform = 'scale(0)';
 }
+
+setTimeout(function() {
+ welcome();
+}, 1000);
+
 //dark mode script 
 function darkMode(){
 document.getElementById("darkModeContainer").style.display = "flex";
