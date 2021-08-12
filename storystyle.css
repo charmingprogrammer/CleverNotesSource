@@ -1,0 +1,124 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Sans-Serif;
+      user-select: none;
+      user-zoom: none;
+    }
+    header {
+      height: 50px;
+      width: 100%;
+      background:white;
+      position: fixed;
+      bottom:0;
+      display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px black;
+        z-index: 139;
+    }
+    #logo{
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    header img{
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        transform: scale(0.8);
+      } 
+      header h1 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      header a{
+        text-decoration: none;
+        color: #ffffff;
+        background: #0091e7;
+        padding: 10px 20px;
+        transform: scale(0.8);
+        border-radius: 5px;
+        
+      }
+    #storyBody {
+      height: 100%;
+      width: 100%;
+    }
+    #storyBody img{
+      height: 100%;
+      width: 100%;
+      border-radius: 10px ;
+      transform: scale(0.9);
+    
+    }
+    #storyBody h2{
+      padding: 10px 20px;
+    }
+     #storyBody p{
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+    
+    #moreStory {
+      height: 100%;
+      width: 100%;
+    }
+    footer {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      color: gray;
+    }
+    footer a {
+      text-decoration: none;
+      color: gray;
+    }
+@media only screen and (min-width:900px) {
+      #storyBody {
+        width: 70%;
+        height: 100%;
+        float: right;
+      }
+        #storyBody h2{
+      padding: 10px 40px;
+    }
+     #storyBody p{
+      padding: 10px 40px;
+      font-size: 20px;
+    }
+      header {
+        height: 100px;
+        top: 0;
+        left: 0;
+        width: 30%;
+        box-shadow: none;
+      }
+        #logo{
+      width: 50%;
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+    }
+    header a{
+    }
+      
+      #moreStory {
+        height: 100vh;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 30%;
+      }
+      footer {
+        width: 70%;
+        float: right;
+      }
+    }
+

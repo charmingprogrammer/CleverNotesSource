@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    How to learn anything faster as possible.
+  </title>
+  <meta name="description" content="Step by step guide .How to learn anything faster as possible.">
+  <!--font awesome kit link -->
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <!--css-->
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-shadow: border-box;
+      font-family: Sans-Serif;
+      scroll-behavior: smooth;
+    }
+    img {
+      background: none;
+    }
+    a {
+      cursor: default;
+      text-decoration: none;
+      color: black;
+    }
+    .nevContainer {
+      background: white;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      position: sticky;
+      top: 0;
+      z-index: 228;
+      box-shadow: 0 0 1px black;
+    }
+    .logo {
+      width: 90%;
+      height: 100%;
+      background: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .logo img {
+      height: 50px;
+      width: 50px;
+      border-radius: 100px;
+      background: none;
+      margin-left: 5px;
+      transform: scale(0.8);
+    }
+    .logo h1 {
+      font-weight: lighter;
+      background: none;
+      white-space: nowrap;
+      font-size: 20px;
+    }
+    .nevOpener {
+      width: 10%;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .2s ease-in;
+    }
+    .nevOpener:hover {
+      background: #28343827;
+    }
+    i {
+      background: none;
+
+    }
+    i:hover {
+      color: #656565;
+    }
+    .nevContent {
+      height: 250px;
+      width: 200px;
+      background: white;
+      position: fixed;
+      top: 5px;
+      right: 5px;
+      z-index: 12983;
+      box-shadow: 0 0 2px 1px #00000077;
+      transform: scale(0);
+      transform-origin: top right;
+      transition: .1s ease-in;
+      border-radius: 5px;
+    }
+    .nevContent ul {
+      background: none;
+    }
+    .nevContent li {
+      list-style-type: none;
+      background: none;
+      width: 200px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .nevContent li:hover {
+      background: #dcdcdc2f;
+    }
+    .nevContent li a {
+      background: none;
+      color: black;
+      text-decoration: none;
+      cursor: default;
+      padding: 10px 60px;
+
+    }
+    .nevContentCloser {
+      height: 50px;
+      width: 200px;
+      background: none;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .PointsBarCon {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .PointsBarCon h1 {
+      text-align: center;
+      width: 100%;
+      background: none;
+      font-weight: 400;
+      font-size: 25px;
+      margin-top: 10px;
+      text-transform: capitalize;
+    }
+    .PointsBarCon h2 {
+      text-align: center;
+      width: 100%;
+      background: none;
+      font-weight: 400;
+      display: none;
+    }
+    #Poster {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      transform: scale(0.9);
+      transition: .1s ease-out;
+      box-shadow: 0 0 1px black;
+    }
+    .PointsBar {
+      height: 50px;
+      width: 100%;
+      background: none;
+      box-shadow: 0 0 1px black;
+      transform: scale(0.9);
+      border-radius: 5px;
+      cursor: default;
+      transition: .2s ease-in;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .PointsBar p {
+      padding: 10px 20px;
+      background: none;
+      font-size: 20px;
+    }
+    .PointsBar:hover {
+      background: #65bada6c;
+    }
+    .mainBody {
+      height: 100%;
+      width: 100%;
+    }
+    .box {
+      height: 100%;
+      width: 100%;
+      box-shadow: 0 0 1px black;
+      transform: scale(0.9);
+      border-radius: 10px;
+      transition: .2s ease-in;
+    }
+    .box:hover {
+      background: #f2f7a8;
+      color: black;
+    }
+    .box img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .box h3,.box p {
+      padding: 10px 20px;
+      background: none;
+      font-size: 20px;
+    }
+    footer {
+      height: 100%;
+      width: 100%;
+      background: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      transform: scale(0.94);
+    }
+    .footerBox {
+      height: 50px;
+      width: 50%;
+      background: none;
+      border-radius: 10px;
+      transform: scale(0.9);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 0 3px black;
+    }
+    .footerBox:hover {
+      background: #65b1d8;
+    }
+    footer p {
+      width: 100%;
+      text-align: center;
+      background: none;
+    }
+    #DarkMode {
+      display: flex;
+      justify-content: center;
+    }
+    #On {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background: none;
+    }
+    #On:hover {
+      background: #eaeaea3e;
+    }
+    #Off {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background: none;
+    }
+    #Off:hover {
+      background: #eaeaea41;
+    }
+    #Top {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background: none;
+    }
+    #Top:hover {
+      background: #eaeaea29;
+    }
+    
+@media only screen and (min-width: 600px) {
+  *{
+    display: grid;
+    place-items: center;
+  }
+  body {
+    width: 70%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!--nevigation-->
+  <div class="nevContainer">
+    <div class="logo">
+      <img src="https://classnotes.tech/ClassNotesLogo.png" alt="Logo" /> <h1>Class Notes</h1>
+    </div>
+    <div class="nevOpener" onclick="nevOpener()">
+      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <!--nevigation content-->
+  <div class="nevContent" id="nevContent">
+    <ul>
+      <li><a href="AllNotes.html">All Notes</a></li>
+      <li><a href="Short.html">All Shorts </a></li>
+      <li><a href="Quizzes.html">All Quizzes</a></li>
+      <li><a href="Tools.html">All Tools</a></li>
+    </ul>
+    <div class="nevContentCloser">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-times" aria-hidden="true" onclick="nevContentCloser()"></i>
+    </div>
+  </div>
+
+  <!--Points bar and top title and poster-->
+  <div class="PointsBarCon" onclick="nevContentCloser()">
+    <h1>How to learn anything faster as possible.</h1> <br> <br> <br>
+    <img src="LearnFaster.png" alt="How to learn anything faster as possible." id="Poster" />
+    <h2>All Main Points</h2> <br><br> <br>
+    <a href="#1" class="PointsBar"><p>
+      1.Don't reinvent the wheel.
+    </p>
+    </a>
+    <a href="#2" class="PointsBar"> <p>
+      2.Deconstruct the skill
+    </p>
+    </a>
+    <a href="#3" class="PointsBar"> <p>
+      3.Stop multitasking
+    </p>
+    </a>
+    <a href="#4" class="PointsBar">  <p>
+      4.Repeat, repeat, repeat
+    </p>
+    </a>
+    <a href="#5" class="PointsBar"><p>
+      5.Seek immediate feedback
+    </p>
+    </a>
+    <a href="#6" class="PointsBar"><p>
+      6.Go Long
+    </p>
+    </a>
+
+  </div>
+
+  <div class="mainBody">
+    <div class="box" id="1">
+      <img src="Reinvent.png" alt="reinvent" />
+      <h3>1.Don't reinvent the wheel.</h3>
+      <p>
+        Mimic and get help from someone who’s already learned it to get tips and save time. <br> <br>
+        In order to achieve mastery faster, our first step should be to consult the top players in the field. <br> <br> And model the path they have already carved out for us.
+        <br> <br>
+      </p>
+    </div>
+    <div class="box" id="2">
+      <img src="structure.png" alt="deconstructed" />
+      <h3>2.Deconstruct the skill.</h3>
+      <p>
+        fundamental components, to find the most important things to practice first. <br> <br> This shows that very few things actually make a difference in any aspect of our lives, including learning. <br> <br>
+        Use the Pareto Principle: which describes a goal of generating 80 percent of results by putting in 20 percent of the effort. <br><br>
+      </p>
+
+    </div>
+    <div class="box" id="3">
+      <img src="Multipletask.png" alt="multitasking" />
+      <h3>3.Stop multitasking</h3>
+      <p>
+        Many of us aren’t able to dedicate the time it takes to learn a skill because of the countless new projects that come our way. <br> <br> Once you have deconstructed the subset skills that will give you the maximum amount of results,<br> focus solely on improving those skills and avoid learning anything else until you’ve mastered them. <br><br>
+      </p>
+    </div>
+    <div class="box" id="4">
+      <img src="Repeat.png" alt="Repeat" />
+      <h3>4.Repeat, repeat, repeat.</h3>
+      <p>
+        Expert-level performance is primarily the result of expert-level practice, not due to innate talent. <br> <br> Learning requires frequency and persistence in performing the same skill over and over again, until you can do it subconsciously, without having to think about it. <br> <br>
+      </div>
+      <div class="box" id="5">
+        <img src="https://cdn.pixabay.com/photo/2017/12/01/08/52/feedback-2990424_1280.jpg" alt="Seek immediate feedback." />
+        <h3>5.Seek immediate feedback.</h3>
+        <p>
+          The most effective learners actively seek feedback to enhance their performance. <br> <br> Feedback is necessary for a learner to confirm that she/he is on the right track.<br> <br>
+        </div>
+        <div class="box" id="6">
+          <img src="https://cdn.pixabay.com/photo/2013/07/12/12/44/vortex-146129_1280.png" alt="Go long" />
+          <h3>6.Go Long</h3>
+          <p>
+            Although it’s important to know when to quit, many potential winners don’t reach success because they quit before the dip. <br> <br> There’s a sense of euphoria we all experience when we begin something new. <br> Once the honeymoon phase fades away, we experience the “dip” and our progress begins to plateau or diminish. This is when most of us quit. <br> <br>
+          </p>
+        </div>
+
+      </div>
+      
+      <footer>
+        <a href="About.html" class="footerBox">About us</a>
+        <a href="Contact.html" class="footerBox">Contact us</a>
+        <a href="PrivacyPolicy.html" class="footerBox">Privacy Policy</a>
+        <a href="TermsConditions.html" class="footerBox">Terms & Conditions</a>
+        <a href="Sitemap.html" class="footerBox">Sitemap</a>
+
+        <div class="footerBox" id="DarkMode">
+          <div id="On" onclick="on()">
+            On
+          </div>
+          <div id="Off" onclick="off()">
+            Off
+          </div>
+          <div id="Top" onclick="Top()">
+            Top
+          </div>
+
+        </div>
+        <p>
+          © 2021 classnotes.tech All Rights Reserved
+        </p>
+      </footer>
+
+      <script type="text/javascript" charset="utf-8">
+        function  nevOpener() {
+          document.getElementById("nevContent").style.transform = 'scale(1)';
+        }
+        function  nevContentCloser() {
+          document.getElementById("nevContent").style.transform = 'scale(0)';
+        }
+
+
+        //Dark Mode function
+
+        function Top() {
+          document.querySelector('*').scroll(0, 0);
+        }
+
+        function on() {
+          document.querySelector('*').style.backgroundColor = "#222c2c";
+
+          document.querySelector('*').style.color = 'white';
+
+          document.querySelector('.nevContainer').style.backgroundColor = "#222c2c";
+          document.querySelector('.nevContent').style.backgroundColor = "#222c2c";
+
+          let a = document.getElementsByTagName('a');
+
+          for (let i = a.length - 1; i >= 0; --i) {
+            a[i].style.color = '#dddddd';
+          }
+
+        }
+        function off() {
+          document.querySelector('*').style.backgroundColor = "";
+
+          document.querySelector('*').style.color = '';
+
+          document.querySelector('.nevContainer').style.backgroundColor = "";
+          document.querySelector('.nevContent').style.backgroundColor = "";
+
+          let a = document.getElementsByTagName('a');
+
+          for (let i = a.length - 1; i >= 0; --i) {
+            a[i].style.color = '';
+          }
+
+        }
+        
+        //hide all img form boxes 
+        let mainBody = document.querySelector('.mainBody');
+
+        let allImg = mainBody.getElementsByTagName('img');
+        
+        for (let i = allImg.length - 1; i >= 0; --i) {
+            allImg[i].style.display = 'none';
+          }
+        
+        
+      </script>
+    </body>

@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  font-family: Sans-Serif;
+  background: #ebecec;
+}
+.nev__top{
+  height: 50px;
+  width: 100%;
+  background: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  z-index: 122;
+}
+.nev__top i{
+  padding: 10px 20px;
+  background: none;
+  color: #4c4c4c ;
+}
+.nev__top h1{
+  background: none;
+  font-weight: 300;
+  font-size: 20px;
+}
+.nev__top img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background: none;
+  transform: scale(0.7);
+}
+.nev__container{
+  height: 100vh;
+  width: 100%;
+  background: #00000000;
+  position: fixed;
+  top: 0;
+  z-index: 122;
+  display: flex;
+  transition: .2s ease-in;
+  left: -100%;
+}
+.nev__content{
+   height: 100vh;
+  width: 70%;
+  background:#ffffff;
+  box-shadow: 0 0 2px 1px black;
+}
+.nev__content li{
+  padding: 10px 20px;
+  list-style-type: none;
+  background: none;
+  
+}
+.nev__content li:hover {
+  background: #e7e7e7;
+  color: black;
+}
+.nev__content li a{
+  color: #414141;
+  background: none;
+  padding: 10px 50px;
+}
+.nev__closer{
+   height: 100vh;
+  width: 30%;
+  background: #e4e4e400;
+}
+
+.home{
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.posterTitle{
+  height: 100%;
+  width: 100%;
+  background: white;
+  display:grid;
+  place-items: center;
+}
+.posterTitle h2{
+  text-align: center;
+  background: none;
+  font-weight: 300;
+  font-size: 30px;
+}
+#subscribe{
+  padding: 10px 20px;
+  background: orange;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  transition: .5s ease-in;
+}
+#subscribe:hover{
+  background: #50bdda;
+}
+.poster{
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9);
+  display:grid;
+  place-items: center;
+  background: none;
+}
+.poster img{
+  background: none;
+}
+.box{
+  height: 100%;
+  width: 100%;
+}
+.box__top{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box__top h3{
+  background: none;
+  padding: 10px 25px;
+  color: #464646;
+}
+.box__top a{
+  background: none;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: default;
+  color: orange;
+  border-radius: 10px;
+  transition: .2s ease-in;
+}
+.box__top a:hover {
+ color: #0082ff;
+  transform: scale(0.8);
+  
+}
+.box__bottom{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.box__bottom::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.box__bottom {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.boxes{
+  height: 300px;
+  min-width: 190px;
+  transform: scale(0.99);
+  border-radius: 10px;
+  transition: .2s ease-in;
+}
+.boxes:hover{
+  transform: scale(0.9);
+}
+.imgCon{
+  height: 200px;
+  min-width: 200px;
+  background:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.9);
+  border-radius: 10px;
+}
+.description{
+  height: 50px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.9);
+  border-radius: 10px;
+}
+.description p{
+  color: black;
+  text-align: center;
+  background: none;
+ font-weight: bold;
+ font-size: 18px;
+}
+footer{
+  height: 100%; 
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content :space-around; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer img{
+  transform: rotate(180deg);
+}
+footer a{
+  color: #787878;
+  text-decoration: none;
+  background: none;
+  margin-left: 10px;
+}
+footer p{
+  background: none;
+  width: 100%;
+}
+a{
+  cursor: default;
+  text-decoration: none;
+}
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+strong {
+  background: none;
+  font-size: 25px;
+  padding: 10px 20px;
+  color: #414142;
+}
