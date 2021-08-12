@@ -223,7 +223,7 @@ function chapter1() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -302,7 +302,7 @@ function chapter2() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement10.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 11 created
@@ -380,7 +380,7 @@ function chapter3() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement10.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 11 created
@@ -459,7 +459,7 @@ function chapter4() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -539,7 +539,7 @@ function chapter5() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -620,7 +620,7 @@ function chapter6() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -701,7 +701,7 @@ function chapter7() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -782,7 +782,7 @@ function chapter8() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -863,7 +863,7 @@ function chapter9() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -944,7 +944,7 @@ function chapter10() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -1025,7 +1025,7 @@ function chapter11() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -1106,7 +1106,7 @@ function chapter12() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -1187,7 +1187,7 @@ function chapter13() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
@@ -1268,7 +1268,7 @@ function chapter14() {
   divElement9.className = "box";
   divElement9.id = "box9";
   divElement9.style.backgroundColor = 'teal';
-  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Downloads Notes</a></h2>';
+  divElement9.innerHTML = '<h2><a style="color:white;" href="Notes.html">Request Notes</a></h2>';
   ContentContainer.appendChild(divElement9);
 
   //div element 10 created
