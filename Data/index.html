@@ -1,1 +1,163 @@
+<!DOCTYPE html>
 
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <title>Manoarya</title>
+</head>
+
+<body>
+  <!-- top navigation  -->
+  <nav>
+    <!-- logo  container  -->
+    <div id="logo_container">
+      <!-- <img src="Logo.png" alt="Manoarya logo"> -->
+      <b>Manoarya</b>
+    </div>
+    <!-- search input -->
+    <input type="search" id="searchInput" placeholder="Search" onclick="searchInput()" onkeyup="searchNow()" />
+    <!-- user googel sign in -->
+    <div id="user_container" onclick="user()">
+      <img src="https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_960_720.png" alt="userPic"
+        id="googleuserPic">
+    </div>
+  </nav>
+
+  <div id="bottom_nav">
+    <div class="bottom_box" onclick="home()">
+      <i class="fas fa-home"></i>
+    </div>
+    <div class="bottom_box" onclick="explore()">
+      <i class="far fa-compass"></i>
+    </div>
+    <div class="bottom_box" onclick="add()">
+      <i class="fas fa-plus"></i>
+    </div>
+    <div class="bottom_box" id="Quotes" >
+      <i class="fas fa-comment-dots"></i>
+    </div>
+    <div class="bottom_box" onclick="tool()">
+      <i class="fas fa-tools"></i></i>
+    </div>
+  </div>
+
+  <!--js data pulled hare  -->
+  <div id="container" onclick="userClose()">
+  </div>
+
+  <!-- search suggestion container -->
+
+  <div id="search_container" onclick="searchCloser()">
+    <div id="search_Suggestion">
+      <ul id="myUL">
+      </ul>
+    </div>
+  </div>
+
+  <!-- user auth by google -->
+  <div id="user_login_con">
+    <button onclick="userClose()"><i class="fas fa-times"></i></button>
+    <button id="googleAuthBtn"><img src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png"
+        alt="googel image">Login with Googel</button>
+  </div>
+
+  <!-- add input page stucture -->
+  <div id="add_input_container">
+    <div id='input_Con_Closer' onClick='closeAdd()'>
+      <i class="fas fa-times"></i>
+    </div>
+    <form onSubmit='return false' id='QuotesAdded'>
+      <textarea id="addInput" placeholder="Add Quotes" cols="30" rows="10"></textarea>
+      <button type="submit">Add Quotes</button>
+    </form>
+
+    <script src="AddPost.js" type="text/javascript" charset="utf-8"></script>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="add.js" type="text/javascript" charset="utf-8"></script>
+    <script src="explore.js" type="text/javascript" charset="utf-8"></script>
+    <script src="Quotes.js" type="text/javascript" charset="utf-8"></script>
+    <script src="home.js" type="text/javascript" charset="utf-8"></script>
+    <script src="firebase.js" type="module" charset="utf-8"></script>
+
+    <!-- script for firebase modules -->
+    <!-- <script type="module">
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+  import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+  import { getDatabase ,ref, set,push, onValue,} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCo6yvHPJj6-iC5UJH45ivJ_y55qO4-_k8",
+    authDomain: "manoarya-aa848.firebaseapp.com",
+    projectId: "manoarya-aa848",
+    storageBucket: "manoarya-aa848.appspot.com",
+    messagingSenderId: "360294335968",
+    appId: "1:360294335968:web:9f40692ffc8893758cd785",
+    measurementId: "G-DW5MS4WGQD"
+  };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+
+// firebse auth code 
+const auth = getAuth();
+const provider = new GoogleAuthProvider();
+const db = getDatabase();
+
+function gooleAuth() {
+signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    // firebase database script 
+   set(ref(db, 'users/'), {
+    userPic: user.photoURL,
+  });
+  document.getElementById('user_login_con').style.top = '-100%'; 
+}).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+}
+
+document.getElementById('googleAuthBtn').addEventListener('click', gooleAuth);
+
+// get user data form firebse database
+const starCountRef = ref(db, 'users/');
+onValue(starCountRef, (snapshot) => {
+  const data = snapshot.val();
+  document.getElementById('googleuserPic').src = data.userPic;
+});
+
+// Quotes data form firebase database 
+
+// const textInput = document.getElementById('addInput');
+
+//       // ready data
+//       function ReadyData() {
+//       push(ref(db, "Quotes/"), {
+//         QuotesByUser : 'hello world',
+//       });
+//       alert('Quotes Added 😁');
+//     }
+//     //send data
+//     ReadyData();
+
+</script> -->
+
+</body>
